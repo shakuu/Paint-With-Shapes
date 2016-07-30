@@ -1,6 +1,6 @@
 function initializeClearCanvasButton() {
     var btnClearCanvas = document
-        .querySelector('#clear-canvas')
+        .querySelector('#clear #new-canvas-btn')
         .addEventListener('click', function () {
 
             kineticStage.removeChildren();
@@ -16,10 +16,10 @@ function initializeClearCanvasButton() {
             };
 
             currentColor = '#cc00cc';
-
             document.querySelector('#layer-list').innerHTML = '';
         });
 
+    // DELETE THIS
     var btnToggleColor = document
         .querySelector('#toggle-color')
         .addEventListener('click', function () {
